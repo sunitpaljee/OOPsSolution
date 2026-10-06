@@ -6,13 +6,18 @@ namespace OOPsProject
 {
     public class DivideByOddNumber : Exception
     {
-
-        public DivideByOddNumber() 
+        public DivideByOddNumber()
         {
             
-            
         }
-        
-    
+        //public override string Message => base.Message;
+
+        public override string Message
+        {
+            get
+            {
+                return "Sunit";
+            }
+        }
     }
 }

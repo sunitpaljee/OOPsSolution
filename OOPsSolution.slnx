@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="AccessDemo1/AccessDemo1.csproj" Id="e1e120bc-13f2-4eb9-92c8-71ebf8842d13" />
+  <Project Path="AccessDemo2/AccessDemo2.csproj" Id="4641742f-33cf-46d1-83d2-471bb462baac" />
   <Project Path="OOPsProject/OOPsProject.csproj" />
+  <Project Path="WindowsApplication/WindowsApplication.csproj" Id="4bd70c08-26d7-471a-8abf-7fab5309d527" />
 </Solution>

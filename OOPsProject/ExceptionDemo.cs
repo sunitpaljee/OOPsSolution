@@ -18,6 +18,11 @@ namespace OOPsProject
                 y = int.Parse(Console.ReadLine());
                 Console.WriteLine(x / y);
 
+                if(y % 2 > 0)
+                {
+                    throw new ApplicationException("Aman");
+                }
+
                 int[] arr = new int[4];
                 for (int i = 0; i < arr.Length + 1; i++)
                 {
@@ -36,11 +41,12 @@ namespace OOPsProject
             {
                 Console.WriteLine("Please enter x and y value in between {0} and {1} {2}", int.MinValue, int.MaxValue, ex3.Message);
             }
-            
-            catch(DivideByOddNumber ex4)
+
+            catch (DivideByOddNumber ex4)
             {
                 Console.WriteLine(ex4.Message);
             }
+
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);

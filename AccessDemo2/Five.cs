@@ -8,12 +8,50 @@ namespace AccessDemo2
     {
         static void Main()
         {
-            AccessDemo1.One o = new AccessDemo1.One();
-            // o.Test1(); // Error: 'One.Test1()' is inaccessible due to its protection level
-            // o.Test2(); // Error: 'One.Test2()' is inaccessible due to its protection level
-            // o.Test3(); // Error: 'One.Test3()' is inaccessible due to its protection level
-            // o.Test4(); // Error: 'One.Test4()' is inaccessible due to its protection level
-            o.Test5(); // Accessible: Public method
+           Five f = new Five();
+            //five.AddNums(5, 10);
+            //five.SayHello("Hello, World!");
+            //AddDel addDel = new AddDel(f.AddNums);
+            //addDel(5, 10);
+            
+            //SayDel sayDel = new SayDel(f.SayHello);
+            //sayDel("Hello, World!");
+
+            //AddDel addDel1 = new AddDel(Five.AddNumsStatic);
+            //addDel1(5, 10);
+
+            MathDel mathDel = f.AddNums;
+            mathDel += f.SubNums;
+            mathDel += f.MultNums;
+            mathDel += f.DivNums;
+            
+            mathDel(10, 5);
+
         }
+        public void AddNums( int a, int b )
+        {
+            Console.WriteLine(a + b);
+        }
+        public void SubNums(int a, int b)
+        {
+            Console.WriteLine(a - b);
+        }
+        public void MultNums(int a, int b)
+        {
+            Console.WriteLine(a * b);
+        }
+        public void DivNums(int a, int b)
+        {
+            Console.WriteLine(a / b);
+        }
+        public void SayHello(string message)
+        {
+            Console.WriteLine(message);
+        }
+        public static void AddNumsStatic(int a, int b)
+        {
+            Console.WriteLine(a + b);
+        }
+
     }
 }

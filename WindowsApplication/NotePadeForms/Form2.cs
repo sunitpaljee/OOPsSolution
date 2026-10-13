@@ -14,9 +14,9 @@ public class Form2 : Form
 		this.BackColor = Color.Blue;
 		this.Size = new Size(600,600);
 	}
-	static void Main()
-	{
-		Form2 f = new Form2();
-		Application.Run(f);
-	}
+	//static void Main()
+	//{
+	//	Form2 f = new Form2();
+	//	Application.Run(f);
+	//}
 } 

@@ -39,8 +39,8 @@ public class Form3 : Form
 		Controls.Add(button2);
 		Controls.Add(button3);
 	}
-	static void Main()
-	{
-		Application.Run(new Form3());
-	}
+	//static void Main()
+	//{
+	//	Application.Run(new Form3());
+	//}
 } 
